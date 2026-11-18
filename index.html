@@ -69,6 +69,14 @@ dialog.closing .dialog-inner{animation:letter-away .3s ease both}@keyframes lett
 .final-note .train-back{flex-shrink:0;margin:0 auto}.final-hint{font: .75rem system-ui,sans-serif;color:#805b5f;margin:-12px 0 18px;animation:photo-appear .8s 2s both;--turn:0deg}
 @media(max-width:480px){.final-note{padding:28px 17px 36px}.final-note p{font-size:1.13rem;line-height:1.48}.final-photos{gap:9px}.final-photo{padding:5px 5px 15px}.final-photo img{height:clamp(90px,35vw,140px)}}
 @media(prefers-reduced-motion:reduce){.final-photo,.final-hint,.final-note p,.final-note::before{animation:none;opacity:1;transform:none}}
+
+/* Readable, warm typography for the notes on every device. */
+.letter{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:clamp(1.06rem,4.2vw,1.22rem);line-height:1.65;letter-spacing:.005em}
+.final-note p:first-of-type{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:clamp(1.06rem,4.1vw,1.22rem);line-height:1.68;letter-spacing:.005em}
+.final-note p:nth-of-type(2),.sign{font-family:Georgia,serif;font-size:1.4rem;font-style:italic;line-height:1.35}
+.dialog-inner h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(1.8rem,7vw,2.5rem);line-height:1.15}
+.env-title{font-family:Georgia,serif;font-size:1.22rem;font-style:italic;font-weight:400}
+@media(max-width:480px){.env-title{font-size:1.06rem}.final-note p:first-of-type{font-size:1.06rem;line-height:1.6}}
 </style>
 </head>
 <body>
